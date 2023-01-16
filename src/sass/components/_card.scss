@@ -1,0 +1,55 @@
+@use "../variables/variables";
+
+.card-perfume {
+  margin: 20px;
+  padding: 25px 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$color-cream;
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+}
+
+.perfume-information {
+  background-color: hsl(0, 0%, 100%);
+  padding: 23px;
+  &__products-category {
+    font-family: variables.$font-titles;
+    font-size: 10px;
+  }
+  &__description {
+    font-family: variables.$font-paragraph;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  &__name-perfume {
+    font-family: variables.$font-titles;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  &__button {
+    font-family: variables.$font-titles;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .prices {
+    display: flex;
+    gap: 25px;
+    padding-top: 15px;
+    &__discount {
+      font-family: variables.$font-titles;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &__regular {
+      font-family: variables.$font-titles;
+      font-weight: 700;
+    }
+  }
+}
