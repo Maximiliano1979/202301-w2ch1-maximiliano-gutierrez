@@ -6,27 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sass/styles.scss">
-  <link rel="shortcut icon" href="/src/img/favicon-32x32.png" type="image/x-icon">
-  <title>Challenge </title>
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+  <title>Challenge</title>
 </head>
 
 <body>
-  <article>
+  <article class="card-perfume">
     <div>
-      <img src="/src/img/image-product-mobile.jpg" alt="Perfum Gabrielle Essence Eau De Parfum" width="686"
-        height="480">
-      <div>
-        <h2>Perfume</h2>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-          Chanel.</p>
-        <div>
-          <span>$149.99</span>
-          <span>$169.99</span>
-        </div>
-        <button><img src="/src/img/icon-cart.svg" alt="Cart" width="15" height="16"> Add to cart</button>
-      </div>
+      <img src="img/image-product-mobile.jpg" alt="Perfum Gabrielle Essence Eau De Parfum" width="686" height="480"
+        class="card-perfume__image">
     </div>
+    <div class="perfume-information">
+      <span class="perfume-information__products-category">Perfume</span>
+      <h3 class="perfume-information__name-perfume">Gabrielle Essence Eau De Parfum</h3>
+      <p class="perfume-information__description">A floral, solar and voluptuous interpretation composed by Olivier
+        Polge, Perfumer-Creator for the House of
+        Chanel.</p>
+      <div class="perfume-information__prices prices">
+        <span class="prices__discount">$149.99</span>
+        <span class="prices__regular">$169.99</span>
+      </div>
+      <button class="perfume-information__button button"><img src="img/icon-cart.svg" alt="Cart" width="15" height="16"
+          class="button__cart"> Add to cart</button>
+    </div>
+
   </article>
 
 </body>
